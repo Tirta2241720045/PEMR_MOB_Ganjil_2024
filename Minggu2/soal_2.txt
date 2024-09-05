@@ -1,0 +1,6 @@
+Untuk seorang pemula, memahami Dart sebelum belajar Flutter penting karena:
+
+1. Dasar Pengembangan: Dart adalah bahasa pemrograman yang digunakan Flutter, jadi memahaminya adalah langkah pertama dalam membuat aplikasi dengan Flutter.
+2. Sintaks Dasar: Dart memiliki sintaks dan aturan yang berbeda dari bahasa lain. Memahaminya membantu dalam menulis kode yang benar di Flutter.
+3. Kemampuan Asynchronous: Dart mendukung pemrograman asinkron, yang sering digunakan dalam Flutter untuk menangani operasi yang memerlukan waktu.
+4. Debugging: Pengetahuan tentang Dart membantu dalam mengidentifikasi dan memperbaiki masalah dalam kode Flutter.

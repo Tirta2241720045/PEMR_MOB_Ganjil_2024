@@ -1,0 +1,26 @@
+Berikut adalah poin-poin penting dari materi Dart untuk pengembangan aplikasi mobile menggunakan Flutter:
+
+1. Struktur Dasar Dart:
+   - Mirip dengan bahasa seperti C atau JavaScript.
+   - Memiliki operator standar, tipe built-in, dan control flow yang familiar.
+
+2. Pemrograman Berorientasi Objek (OOP):
+   - Dart adalah bahasa OOP yang mendukung encapsulation, inheritance, composition, abstraction, dan polymorphism.
+   - Class adalah cetak biru untuk objek yang menyimpan fields dan methods.
+
+3. Operator Dart:
+   - Operator adalah metode khusus dalam kelas.
+   - Mendukung aritmetika (+, -, *, /, %, ~/), inkremen dan dekrement (++/--), serta operator perbandingan dan logika (==, !=, >, <, &&, ||, !).
+
+4. Function dan Method:
+   - Function adalah potongan kode independen, sedangkan method adalah function yang terkait dengan objek dari sebuah class.
+   - Function main adalah titik awal eksekusi program di Dart.
+
+5. Operator Khusus:
+   - Arithmetic Operators: Untuk operasi matematika dasar.
+   - Increment/Decrement Operators: Untuk menambah atau mengurangi nilai variabel.
+   - Equality/Relational Operators: Untuk membandingkan nilai dan hubungan antara variabel.
+   - Logical Operators: Untuk operasi logika pada boolean.
+
+6. Penggunaan Function dan Method:
+   - Function adalah unit kode independen, sedangkan method terikat pada kelas dan memiliki akses ke instance objek melalui keyword `this`.
