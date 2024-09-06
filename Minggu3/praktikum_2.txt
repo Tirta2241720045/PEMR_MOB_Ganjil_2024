@@ -1,0 +1,8 @@
+Langkah 2:
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+Jawab:  Error terjadi karena variabel counter belum dideklarasikan sebelumnya.
+        Maka dari itu, kita perlu mendeklarasikan variabel counter terlebih dahulu sebelum digunakan.
+
+Langkah 3:
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan do-while.
+Jawab:  Program akan menampilkan angka 0 sampai 32, kemudian menampilkan angka 33 sampai 77.
