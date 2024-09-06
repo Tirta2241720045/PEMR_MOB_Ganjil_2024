@@ -1,0 +1,7 @@
+Langkah 2:
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+Jawab: Error karena tidak ada deklarasi variabel Index
+
+Langkah 3:
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan for dan break-continue.
+Jawab: Error karena tidak ada kondisi yang memenuhi if dan else if, sehingga tidak ada print yang dijalankan.
