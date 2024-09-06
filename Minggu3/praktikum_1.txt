@@ -1,0 +1,8 @@
+Langkah 2:
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
+Jawab: Kode berjalan dengan baik, dan menampilkan output "Test2" dan "Test2 again" karena variabel test memiliki nilai "test2".
+
+Langkah 3:
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan if/else.
+Jawab:  Jika Anda menambahkan kode yang Anda berikan ke program Dart Anda, akan terjadi kesalahan saat kompilasi. 
+        Ini karena Dart mengharapkan kondisi dalam pernyataan if menjadi boolean (bool), tetapi test adalah String.
