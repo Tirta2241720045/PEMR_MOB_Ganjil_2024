@@ -1,0 +1,16 @@
+Langkah 2:
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+Jawab: Tidak terjadi error, output yang dihasilkan sesuai akan tetapi 'last' tidak terbaca karena tidak ada variabel yang menampungnya.
+
+Langkah 3:
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Gunakan fungsi tukar() di dalam main() sehingga tampak jelas proses pertukaran value field di dalam Records.
+Tidak terjadi error, outputnya (first, last, a: 2, b: true)
+
+Langkah 4:
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Inisialisasi field nama dan NIM Anda pada variabel record mahasiswa di atas. Dokumentasikan hasilnya dan buat laporannya!
+Jawab:
+Error terjadi karena variabel mahasiswa belum diinisialisasi. Variabel mahasiswa harus diinisialisasi terlebih dahulu sebelum digunakan.
+
+// Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Gantilah salah satu isi record dengan nama dan NIM Anda, lalu dokumentasikan hasilnya dan buat laporannya!
+//Jawab:
+// Tidak terjadi error, hasilnya sesuai dengan setiap pemanggilan variabel yang ada di dalam record.

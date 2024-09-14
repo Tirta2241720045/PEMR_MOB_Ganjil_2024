@@ -1,0 +1,129 @@
+Tugas Praktikum
+1. Silakan selesaikan Praktikum 1 sampai 5, lalu dokumentasikan berupa screenshot hasil pekerjaan Anda beserta penjelasannya!
+Jawab: Sudah
+
+2. Jelaskan yang dimaksud Functions dalam bahasa Dart!
+Jawab: Dalam bahasa pemrograman Dart, fungsi (functions) adalah blok kode yang terorganisir dan dapat digunakan kembali, yang dirancang untuk melakukan tugas tertentu. 
+       Fungsi memberikan struktur yang lebih baik dan modularitas yang lebih baik untuk aplikasi.
+       Fungsi dalam Dart dapat didefinisikan menggunakan kata kunci void jika fungsi tersebut tidak mengembalikan nilai, atau dengan tipe data yang sesuai jika fungsi tersebut mengembalikan nilai. 
+       Fungsi juga dapat menerima parameter.
+
+3. Jelaskan jenis-jenis parameter di Functions beserta contoh sintaksnya!
+Jawab: Dalam Dart, ada tiga jenis parameter yang dapat digunakan dalam fungsi: required parameters, optional positional parameters, dan named parameters.
+       1. Required Parameters: Seperti namanya, parameter ini harus disediakan saat memanggil fungsi. Jika tidak, program akan menghasilkan error.
+       2. Optional Positional Parameters: Parameter ini bersifat opsional dan diletakkan dalam tanda kurung siku [] dalam definisi fungsi. Anda dapat memanggil fungsi dengan atau tanpa parameter ini.
+       3. Named Parameters: Parameter ini juga bersifat opsional dan diletakkan dalam tanda kurung kurawal {} dalam definisi fungsi. Saat memanggil fungsi, Anda dapat menyebutkan nama parameter secara eksplisit.
+
+4. Jelaskan maksud Functions sebagai first-class objects beserta contoh sintaknya!
+Jawab: Dalam Dart, fungsi dianggap sebagai "first-class objects", yang berarti mereka dapat ditugaskan ke variabel, dimasukkan ke dalam struktur data (seperti list atau map), 
+       diteruskan sebagai argumen ke fungsi lain, dan bahkan dapat dikembalikan sebagai hasil dari fungsi lain. Ini memberikan fleksibilitas yang besar dalam bagaimana dapat mengorganisir dan mengontrol aliran kode.
+       Berikut adalah beberapa contoh sintaks yang menunjukkan fungsi sebagai first-class objects dalam Dart:
+       1. Menugaskan fungsi ke variabel:
+            void greet() {
+                print('Hello, World!');
+            }
+            void main() {
+                var myFunction = greet;
+                myFunction(); // mencetak 'Hello, World!'
+            }
+        2. Mengirim fungsi sebagai argumen ke fungsi lain:
+            void greet() {
+            print('Hello, World!');
+            }
+
+            void callFunction(Function functionToCall) {
+            functionToCall();
+            }
+
+            void main() {
+            callFunction(greet); // mencetak 'Hello, World!'
+            }
+        3. Mengembalikan fungsi dari fungsi lain:
+            Function makeAdder(int addBy) {
+            return (int i) => addBy + i;
+            }
+
+            void main() {
+            var add2 = makeAdder(2);
+            print(add2(3)); // mencetak '5'
+            }
+        Dalam contoh terakhir, makeAdder adalah fungsi yang mengembalikan fungsi lain. 
+        Fungsi yang dikembalikan (dalam hal ini, fungsi anonim (int i) => addBy + i) menangkap nilai addBy dari lingkup luar dan menambahkannya ke argumen yang diberikan saat dipanggil.
+
+5. Apa itu Anonymous Functions? Jelaskan dan berikan contohnya!
+Jawab:  Anonymous function, juga dikenal sebagai fungsi anonim atau lambda, adalah fungsi yang tidak memiliki nama identifier. Fungsi ini biasanya digunakan untuk operasi sekali pakai yang tidak memerlukan penamaan fungsi.
+        Fungsi anonim dapat memiliki parameter dan blok kode, sama seperti fungsi biasa. Dalam Dart, fungsi anonim dapat dibuat dengan menggunakan sintaks (parameter) => expression untuk fungsi single-line, atau (parameter) { code } untuk fungsi multi-line.
+        Contoh 1: Fungsi Anonim Single-line
+        void main() {
+            var list = ['apple', 'banana', 'cherry'];
+            list.forEach((item) => print(item));
+        }
+        Dalam contoh ini, fungsi anonim (item) => print(item) diteruskan ke metode forEach dari list. Fungsi ini dipanggil untuk setiap item dalam list.
+        Contoh 2: Fungsi Anonim Multi-line
+        void main() {
+            var list = ['apple', 'banana', 'cherry'];
+            list.forEach((item) {
+                print('I love $item');
+            });
+        }
+        Dalam contoh ini, fungsi anonim multi-line digunakan untuk mencetak pesan untuk setiap item dalam list.
+
+6. Jelaskan perbedaan Lexical scope dan Lexical closures! Berikan contohnya!
+Jawab: Lexical Closure: Lexical closure (atau biasa disebut closure) adalah fungsi yang "menangkap" variabel dari lingkup luar. Meskipun lingkup luar mungkin sudah tidak ada, fungsi tersebut masih dapat mengakses dan memanipulasi variabel tersebut.
+          Contoh Lexical Closure dalam Dart:
+            Function makeAdder(int addBy) {
+                return (int i) => addBy + i; // fungsi ini adalah closure yang menangkap variabel addBy
+            }
+
+            void main() {
+                var add2 = makeAdder(2);
+                print(add2(3)); // mencetak 5
+            }
+          Dalam contoh ini, makeAdder mengembalikan closure yang menangkap variabel addBy. Meskipun makeAdder telah selesai dieksekusi dan lingkupnya tidak ada lagi, closure tersebut masih dapat mengakses addBy.
+
+7. Jelaskan dengan contoh cara membuat return multiple value di Functions!
+Jawab:  Dalam Dart, fungsi biasanya hanya dapat mengembalikan satu nilai. Namun, jika Anda ingin mengembalikan beberapa nilai, Anda dapat menggunakan List, Map, atau mendefinisikan kelas khusus. 
+                Berikut adalah beberapa contoh:
+                Menggunakan List:
+                    List<int> minMax(List<int> numbers) {
+                        return [numbers.reduce(min), numbers.reduce(max)];
+                    }
+
+                    void main() {
+                        var numbers = [1, 2, 3, 4, 5];
+                        var result = minMax(numbers);
+                        print('Min: ${result[0]}, Max: ${result[1]}');
+                    }
+                Dalam contoh ini, fungsi minMax mengembalikan list yang berisi nilai minimum dan maksimum dari list angka yang diberikan.
+                Menggunakan Map:
+                    Map<String, int> minMax(List<int> numbers) {
+                        return {'min': numbers.reduce(min), 'max': numbers.reduce(max)};
+                    }
+
+                    void main() {
+                        var numbers = [1, 2, 3, 4, 5];
+                        var result = minMax(numbers);
+                        print('Min: ${result['min']}, Max: ${result['max']}');
+                    }
+                Dalam contoh ini, fungsi minMax mengembalikan map yang berisi nilai minimum dan maksimum dari list angka yang diberikan.
+                Menggunakan kelas khusus:
+                    class MinMaxResult {
+                        int min;
+                        int max;
+
+                    MinMaxResult(this.min, this.max);
+                    }
+
+                    MinMaxResult minMax(List<int> numbers) {
+                        return MinMaxResult(numbers.reduce(min), numbers.reduce(max));
+                    }
+
+                    void main() {
+                        var numbers = [1, 2, 3, 4, 5];
+                        var result = minMax(numbers);
+                        print('Min: ${result.min}, Max: ${result.max}');
+                    }
+                Dalam contoh ini, kita mendefinisikan kelas MinMaxResult untuk menyimpan hasil. Fungsi minMax kemudian mengembalikan instance dari kelas ini.
+
+8. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram!
+Jawab: Sudah

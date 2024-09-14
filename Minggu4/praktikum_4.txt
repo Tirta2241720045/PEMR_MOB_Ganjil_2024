@@ -1,0 +1,25 @@
+Langkah 2:
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+Jawab:
+terjadi error karena variabel list1 tidak didefinisikan
+perbaiki dengan mengganti variabel list1 menjadi list
+
+Langkah 3:
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
+Jawab: terjadi error karena list1 tidak didefinisikan sebelumnya
+
+Langkah 4:
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Tunjukkan hasilnya jika variabel promoActive ketika true dan false.
+Terjadi error karena variabel promoActive belum didefinisikan. Jika variabel promoActive true maka akan menampilkan list nav dengan elemen 'Outlet', jika false
+maka akan menampilkan list nav tanpa elemen 'Outlet'.
+
+Langkah 5:
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Tunjukkan hasilnya jika variabel login mempunyai kondisi lain.
+Jawab: Terjadi error karena variabel login belum didefinisikan. Jika variabel login didefinisikan dengan nilai 'Manager
+maka hasilnya akan menampilkan list nav2 dengan elemen 'Inventory'.
+
+Langkah 6
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Jelaskan manfaat Collection For dan dokumentasikan hasilnya.
+Jawab:
+Hasilnya adalah ['#1', '#2', '#3'].
+Collection For digunakan untuk membuat koleksi baru dengan mengevaluasi ekspresi untuk setiap elemen dalam koleksi yang diberikan.
