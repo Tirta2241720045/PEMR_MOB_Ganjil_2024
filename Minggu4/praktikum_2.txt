@@ -1,0 +1,13 @@
+Langkah 2:
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+Jawab:
+Tidak ada error yang terjadi, output yang dihasilkan adalah:
+{fluorine, chlorine, bromine, iodine, astatine}
+
+Langkah 3:
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan ketiga variabel tersebut. Tambahkan elemen nama dan NIM Anda pada kedua variabel Set tersebut dengan dua fungsi berbeda yaitu .add() dan .addAll(). Untuk variabel Map dihapus, nanti kita coba di praktikum selanjutnya.
+Jawab:
+Tidak terjadi error, variabel names1 dan names2 berhasil menampilkan data yang telah ditambahkan. Sedangkan variabel names3 tidak menampilkan data yang telah ditambahkan, karena variabel names3 merupakan map bukan set.
+Variabel names1 menggunakan fungsi .add() untuk menambahkan data, sedangkan variabel names2 menggunakan fungsi .addAll() untuk menambahkan data.
+Variabel names1 dan names2 menampilkan data yang telah ditambahkan dengan benar.
+Variabel names3 tidak menampilkan data yang telah ditambahkan, karena variabel names3 merupakan map bukan set.

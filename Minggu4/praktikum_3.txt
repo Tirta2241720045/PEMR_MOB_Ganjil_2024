@@ -1,0 +1,11 @@
+Langkah 2:
+Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+Jawab:
+Tidak terjadi error, hal yang terjadi adalah program berhasil dijalankan dan menampilkan output sesuai dengan yang diharapkan.
+
+Langkah 3
+Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
+Output yang dihasilkan adalah:
+{first: partridge, second: turtledoves, fifth: golden rings}
+{2: helium, 10: neon, 18: argon}
+Kode program di atas akan menampilkan variabel gifts dan nobleGases yang telah diubah valuenya. Pada variabel gifts, value dari key 'fifth' diubah menjadi 'golden rings'. Pada variabel nobleGases, value dari key 18 diubah menjadi 'argon'.
