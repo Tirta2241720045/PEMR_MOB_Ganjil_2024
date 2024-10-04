@@ -22,8 +22,7 @@ Tugas Praktikum 1
 ![Screenshot layout_flutter](images/04.png)
 
 2. Silakan implementasikan di project baru "basic_layout_flutter" dengan mengakses sumber ini: https://docs.flutter.dev/codelabs/layout-basics
-- Repository: https://github.com/Tirta2241720045/-
-- Laporan: https://github.com/Tirta2241720045/-/blob/master/README.md 
+- Laporan: https://github.com/Tirta2241720045/PEMR_MOB_Ganjil_2024/blob/main/Tugas1Minggu6/basic_layout_flutter/README.md  
 
 3. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
 
