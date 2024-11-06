@@ -170,10 +170,10 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-09-28T08:19:50.637123Z",
+  "generated": "2024-11-06T08:01:13.314298Z",
   "generator": "pub",
-  "generatorVersion": "3.5.1",
+  "generatorVersion": "3.5.4",
   "flutterRoot": "file:///C:/src/flutter",
-  "flutterVersion": "3.24.1",
+  "flutterVersion": "3.24.4",
   "pubCache": "file:///C:/Users/tirta/AppData/Local/Pub/Cache"
 }
