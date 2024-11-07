@@ -43,7 +43,13 @@ A new Flutter project.
 ![Screenshot photo_filter_carousel](images/P206.png)
 
 2. Gabungkan hasil praktikum 1 dengan hasil praktikum 2 sehingga setelah melakukan pengambilan foto, dapat dibuat filter carouselnya!
-- Jawab:
+- Kode Program:
+![Screenshot photo_filter_carousel](images/T204.png)
+![Screenshot photo_filter_carousel](images/T205.png)
+- Output:
+![Screenshot photo_filter_carousel](images/T201.png)
+![Screenshot photo_filter_carousel](images/T202.png)
+![Screenshot photo_filter_carousel](images/T203.png)
 
 3. Jelaskan maksud void async pada praktikum 1?
 - Pada praktikum 1, `void async` digunakan untuk mendeklarasikan sebuah fungsi yang bersifat **asynchronous** (berjalan di latar belakang) dan mengembalikan nilai **void**, yang berarti fungsi tersebut tidak mengembalikan nilai apapun.
