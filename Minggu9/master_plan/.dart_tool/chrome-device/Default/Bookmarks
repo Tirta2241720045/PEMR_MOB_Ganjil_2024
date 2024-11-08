@@ -1,0 +1,314 @@
+{
+   "checksum": "3b44e7f85b2d5891d4693ab72fe03fcf",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13375467825771797",
+            "date_last_used": "0",
+            "guid": "c393ca8e-da03-4e19-8dae-a1778ef38240",
+            "id": "32",
+            "name": "ASUS Software Portal - Exclusive technology",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/Software-and-Innovations-Portal/",
+            "visit_count": 0
+         }, {
+            "date_added": "13375467825771596",
+            "date_last_used": "0",
+            "guid": "a3686e9f-35e4-4aea-893d-52b08d6912b6",
+            "id": "31",
+            "name": "MyASUS Software - Get the best from ASUS PC",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/ASUS-Software/",
+            "visit_count": 0
+         }, {
+            "date_added": "13375467825770968",
+            "date_last_used": "0",
+            "guid": "5db0ff34-b3f1-4458-bf2c-e16885da6d8d",
+            "id": "30",
+            "name": "McAfee LiveSafe",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://home.mcafee.com/root/campaign.aspx?cid=247829",
+            "visit_count": 0
+         }, {
+            "date_added": "13375467017298939",
+            "date_last_used": "0",
+            "guid": "9e556baa-bd9f-4450-b0aa-0520d4587374",
+            "id": "27",
+            "name": "ASUS Software Portal - Exclusive technology",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/Software-and-Innovations-Portal/",
+            "visit_count": 0
+         }, {
+            "date_added": "13375467017298880",
+            "date_last_used": "0",
+            "guid": "e841eca4-4dc5-402e-92db-5540a11d46d0",
+            "id": "26",
+            "name": "MyASUS Software - Get the best from ASUS PC",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/ASUS-Software/",
+            "visit_count": 0
+         }, {
+            "date_added": "13375467017298674",
+            "date_last_used": "0",
+            "guid": "f41c9c9a-4451-4527-b781-4a208b671727",
+            "id": "25",
+            "name": "McAfee LiveSafe",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://home.mcafee.com/root/campaign.aspx?cid=247829",
+            "visit_count": 0
+         }, {
+            "date_added": "13352436060005931",
+            "date_last_used": "0",
+            "guid": "359f7528-9d47-496b-ac2c-cb23986daab0",
+            "id": "18",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Million Free Games",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://millionfreegames.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13352436060007629",
+            "date_last_used": "0",
+            "guid": "e7c9ac2c-8a85-45b4-bc88-101e5bf9526e",
+            "id": "19",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "New Tab Theme Builder",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://newtabthemebuilder.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13359717880522211",
+            "date_last_used": "0",
+            "guid": "d5518a58-af5b-46ab-8ddf-6b5cea76ce4f",
+            "id": "20",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Скачать Stronghold Legends: Steam Edition: Трейнер/Trainer (+9) [1.3] {Abolfazl.k}",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.playground.ru/stronghold_legends/cheat/stronghold_legends_steam_edition_trejner_trainer_9_1_3_abolfazl_k-820864",
+            "visit_count": 0
+         }, {
+            "date_added": "13369801333707213",
+            "date_last_used": "0",
+            "guid": "be8bdda8-d85b-4d6f-92ba-6b88f5554c7f",
+            "id": "21",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Cisco Networking Academy",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.netacad.com/launch?id=cb0847b7-e6fc-4597-bc31-38ddd6b07a2f&tab=curriculum&view=42dd2bd5-7cb8-5eee-bf15-031bed65d50c",
+            "visit_count": 1
+         }, {
+            "date_added": "13371795814370935",
+            "date_last_used": "0",
+            "guid": "36f784d8-c577-42fd-9484-30e931b2d190",
+            "id": "22",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "co",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "file:///E:/tirta/Downloads/Documents/International%20Journal%20of%20Distributed%20Sensor%20Networks%20-%202024%20-%20Shafiq%20-%20A%20Review%20on%20Software%E2%80%90Defined%20Networking%20for%20Internet.pdf",
+            "visit_count": 1
+         }, {
+            "date_added": "13375466729274672",
+            "date_last_used": "0",
+            "guid": "a1fc1835-cf91-474b-bb82-4fbfed421146",
+            "id": "8",
+            "name": "ASUS Software Portal - Exclusive technology",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/Software-and-Innovations-Portal/",
+            "visit_count": 0
+         }, {
+            "date_added": "13375466729274530",
+            "date_last_used": "0",
+            "guid": "c4558acb-0998-48b6-9914-8bf303c9fd6e",
+            "id": "7",
+            "name": "MyASUS Software - Get the best from ASUS PC",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.asus.com/ASUS-Software/",
+            "visit_count": 0
+         }, {
+            "date_added": "13375466729273676",
+            "date_last_used": "0",
+            "guid": "d2481e38-62a1-4a50-b4b2-c9ddebab0459",
+            "id": "6",
+            "name": "McAfee LiveSafe",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://home.mcafee.com/root/campaign.aspx?cid=247829",
+            "visit_count": 0
+         } ],
+         "date_added": "13375466729126426",
+         "date_last_used": "0",
+         "date_modified": "13375467825771797",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [  ],
+            "date_added": "13318505624655789",
+            "date_last_used": "0",
+            "date_modified": "13318505624655789",
+            "guid": "a8d282e1-4ba5-48bf-8d39-14ea7ac9d110",
+            "id": "9",
+            "name": "Bookmark Bar",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [  ],
+            "date_added": "13318505624655934",
+            "date_last_used": "0",
+            "date_modified": "13318505624655934",
+            "guid": "cc457abd-7995-4ac5-98da-45a1a27f9919",
+            "id": "10",
+            "name": "Other Bookmarks",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13330523621045879",
+               "date_last_used": "0",
+               "guid": "0c9e85ab-1ac5-4427-9b33-4c78a778c07a",
+               "id": "12",
+               "name": "Tes Mengetik Indonesian - 10FastFingers.com",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://10fastfingers.com/typing-test/indonesian",
+               "visit_count": 0
+            }, {
+               "date_added": "13331567964641452",
+               "date_last_used": "0",
+               "guid": "f0bffd47-0d0f-433c-9884-e4f806a168d9",
+               "id": "13",
+               "name": "Google Drive - Peringatan download",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://drive.google.com/u/0/uc?id=14W4OfgPLnlCEOuKFMXMv_F4GXlyfiuV1&export=download",
+               "visit_count": 0
+            }, {
+               "date_added": "13338633661776921",
+               "date_last_used": "0",
+               "guid": "4694c6c3-d1f1-4fa0-89d8-eafd37a8a146",
+               "id": "14",
+               "name": "K2-Makalah Sistem Informasi Manajemen - Google Dokumen",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://docs.google.com/document/d/1szdQ1iH0sMDwmwfvRewGx1j2y8MMl6Ou5PbKvZ7aVjM/edit",
+               "visit_count": 0
+            }, {
+               "date_added": "13340788794007445",
+               "date_last_used": "0",
+               "guid": "34230f4b-7a5b-4d84-9313-1e487a74cea1",
+               "id": "15",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Login",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "http://ujian.jti.polinema.ac.id/public/code/tce_login.php",
+               "visit_count": 0
+            }, {
+               "date_added": "13342117707158079",
+               "date_last_used": "0",
+               "guid": "9da75c52-ba95-4dd0-92f2-3fa2066c716b",
+               "id": "16",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "19_Putra_Nindya_Yuwana_Jobsheet7_BasDat[1].pdf",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "file:///C:/Users/tirta/AppData/Local/Microsoft/Windows/INetCache/IE/DKVWR5SI/19_Putra_Nindya_Yuwana_Jobsheet7_BasDat[1].pdf",
+               "visit_count": 0
+            }, {
+               "date_added": "13346507234755629",
+               "date_last_used": "0",
+               "guid": "8ac5fca9-ae7c-45ba-b862-de3606ccfd55",
+               "id": "17",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "GitHub Student Developer Pack - GitHub Education",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://education.github.com/pack",
+               "visit_count": 0
+            } ],
+            "date_added": "13318505624655946",
+            "date_last_used": "0",
+            "date_modified": "13346507234755629",
+            "guid": "af707547-486b-43df-aef1-aff5ececc7c1",
+            "id": "11",
+            "name": "Synced Bookmarks",
+            "source": "unknown",
+            "type": "folder"
+         } ],
+         "date_added": "13375466729126429",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13375466729126432",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCDBBPAKTAQAAEgAqGElrMmQxL24wdTJOdnd4MWU4a21oU0E9PUgDoAYHEq0BCBMSqAEKHG5xaGRRSkU2VElHMjNEUDd3YXdXWDRnQVpUND0SJGU3YzlhYzJjLThhODUtNDViNC1iYzg4LTEwMWU1YmY5NTI2ZRgAIAMoADCvgvGRsDI4/u7709oxQLHb/bmwMkocS3BKeHF4MDB6TTZkTWxrbXBBTS9DQitWQTlVPVofIh23MjdxYk5xdlNhSSswdjdEMWZ2YXJRcDROcUhBPWUAAAAAwj4CYAUSrAEIEhKnAQocd0k4eVhoOGk3SExjc005OW9QbEwyWHZreDFFPRIkMzU5Zjc1MjgtOWQ0Ny00OTZiLWFjMmMtY2IyMzk4NmRhYWIwGAAgACgAMNDs+9PaMTje7vvT2jFA3u7709oxShwyRlQwa0RLbHV3b0FEQ3I4b2x5dEZ5NUphZ2M9Wh4iHG9Sd2JXYnV5dE1nQkxVaGZ1eks5ZHlvMTBycz1lAAAAAMI+AmAFEo4BCAESiQEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJGYwNjJmNmFkLWZlZjUtNTAxMi1hNmE5LWE0MmI5Mzc2MTc3ZRgAIAAoADDGm5Kd3DA44p2SndwwQOKdkp3cMEocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAADCPgJgABKtAQgQEqgBChxiMUszbmFTZm9GTHF5aFdoS0gyTVZDZENhelk9EiQ5ZGE3NWM1Mi1iYTk1LTRkZDAtOTJmMi0zZmEyMDY2YzcxNmIYACAAKAAw28blm7QxOM3H5Zu0MUDNx+WbtDFKHFl3MnlHOWR6MCtnQTd4OVRqWW11YzJScU9lTT1aHyId91dvY3piSGpoS3FET056UDJtbjBuNSsxbFBHOD1ld3Bso8I+AmAFEq0BCBQSqAEKHFozYkFzK1ZTak5nd0R5ZmVpTElxYlRsRVlZVT0SJGQ1NTE4YTU4LWFmNWItNDZhYi04ZGRmLTZiNWNlYTc2Y2U0ZhgAIAMoADCugvGRsDI47PWa5PUxQLHb/bmwMkocS09XSzZsUlhHQUhRTUpVdGxiaW9zUnVZRDM4PVofIh3bQ1p5TjNqL0k2OTRuTG9KaGtJM29NZEEwQytRPWUAAAAAwj4CYAUSrQEIDhKoAQocTFFCdzcySWFOMERHVmRhQllDNllUQ2wwK1pZPRIkNDY5NGM2YzMtZDFmMS00ZmEwLTg5ZDgtZWFmZDM3YThhMTQ2GAAgACgAMOSevJ6nMTiyoryepzFAsqK8nqcxShxreGMybVYyQXNaRExXbHNGVG5OWUlzNXJQcTQ9Wh8iHd1USWFzaU84RzBMNWdUQVVWSFFVTHpqKzRDNVE9ZdVHTTTCPgJgBRKtAQgNEqgBChxMR0FrTjE2TElvOThxWGREc29YNm93RjArMnM9EiRmMGJmZmQ0Ny0wZDBmLTQzM2MtOTg4NC1lNGY4MDZhMTY4ZDkYACAAKAAwtde0rJYyONmnpPWMMUDZp6T1jDFKHGFPSFpRekE0byt6REV2Qk15V2tvVkwzY2xJZz1aHyIdumZGK0UzVnpHNXV1UktOVHJzU1hobENrb09pRT1l+pHe28I+AmAFEq0BCAsSqAEKHEJFQ0xMSm1XRUliL1FSYU4vUDhtMXpsdkpzND0SJGFmNzA3NTQ3LTQ4NmItNDNkZi1hZWYxLWFmZjVlY2VjYzdjMRgAIAAoADDLm9ag3DA415zWoNwwQNec1qDcMEocK1ZJSlpJN3dXMnNHVlhIdkJBeUYzY1VwZVgwPVofIh2jK3VFaTJRU0V3aG9JMC96SHJSZnJQTExmZnk0PWUAAAAAwj4CYAASrAEIDBKnAQocUnRyR05ObnNjTVFBSEloZ3BlL2tpV2puMkRjPRIkMGM5ZTg1YWItMWFjNS00NDI3LTliMzMtNGM3OGE3NzhjMDdhGAAgACgAMPfQpoOJMTi20aaDiTFAttGmg4kxShxiQzRVVUE0R081MUV5aDMxU3pKV3J5UThQUEU9Wh4iHHRMVzQ2MENvQVZJbFlIY291ak15MWNuQk83ND1lW15LqsI+AmAFEq0BCBUSqAEKHDB6T1A2clBWazJURm1LWURYTWt5NjVlN1dMbz0SJGJlOGJkZGE4LWQ4NWItNGQ2Zi05MmJhLTZiODhmNTU1NGM3ZhgAIAIoADCtgvGRsDI4mIuwrJsyQN3h7LmwMkoccmdheU8rMnJlei9VTmFLMEN3ekJyQlV1bWhrPVofIh3tY2hEQjVDUzZzVjNNNTdtbmZuZDZKZ0JEZTlrPWWt0+Mhwj4CYAUSrAEICRKnAQocRmdFbUV2UStXUFZ6dXI2RjAxT0NvOUw1dDFFPRIkYThkMjgyZTEtNGJhNS00OGJmLThkMzktMTRlYTdhYzlkMTEwGAAgACgAMMqb1qDcMDi4nNag3DBAuJzWoNwwShxpeXFxVEdGMzVxTlFqZ2xybGRlc1V2RGdPRjg9Wh4iHDZ4WFJ0bUQ4ZFVqR3I5SGNDR096ZFRxaEZ1bz1lAAAAAMI+AmAAEo4BCAISiQEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJDYxODU1OWUzLTdjYTUtNTQ4Mi1hYzk2LTQ4M2Q2ZGUyYjMzYhgAIAAoADDHm5Kd3DA4gZ6SndwwQIGekp3cMEocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAADCPgJgABKOAQgDEokBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiRjN2FiMGZlMC04MDY2LTUzYzAtYmZiOS01NmFlMTdkYmM4MGIYACAAKAAwzJuSndwwOP6ekp3cMED+npKd3DBKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAwj4CYAASrQEIFhKoAQocSm5yR3pEUVFoQzY4aS9NQllheWZ1L0ZKczQ4PRIkMzZmNzg0ZDgtYzU3Ny00MmZkLTk0ODQtMzBlOTMxYjJkMTkwGAAgACgAMILRteOiMji3vrXjojJAt76146IyShx4RnpMbnJhTlpBcUttd3FqaU5wenNqeTdQOVU9Wh8iHfY2dDk3aEtWeHcvbStqdWVVZnhxL3JXYzdMK289ZXdwbKPCPgJgBRKtAQgPEqgBChxGcFdkeGVGd01IemZrY1UraTkyaXB1TWdpN0E9EiQzNDIzMGY0Yi03YTViLTRkODQtOTMxMy0xZTQ4N2E3NGNlYTEYACAAKAAwksOpv8cxOPKJj6KvMUDyiY+irzFKHGNidU9SVklBSFpGc1JLVmlKUzAxTlZDajAyQT1aHyId7kVjMmZJU1M3TXFTQWIzSXpLQXp1c2d5SEdpbz1lENrbssI+AmAFEq0BCBESqAEKHEgxdEpuSStlSkwzUlIycnZRdWxvRXF2V2VWaz0SJDhhYzVmY2E5LWFlN2MtNDViYS1iODYyLWRlMzYwNmNjZmQ1NRgAIAAoADD9zK/JxDE4lojxyMQxQJaI8cjEMUocTWYvQ1hwaHBmRXFuQ1VvNTJsdDl6NFdxcm04PVofIh37Rk5qano4U1V3M29TYlY4YzZkL3ZrRVVGRHFvPWXk/lv6wj4CYAUSrAEIChKnAQoca2J0UmVMMUhSd0pFOWJEWDVsVmgrT2x4WXJvPRIkY2M0NTdhYmQtNzk5NS00YWM1LTk4ZGEtNDVhMWEyN2Y5OTE5GAAgACgAMMmb1qDcMDiZnNag3DBAmZzWoNwwShxQM1FKWElHcUoxbHhSdjY5YkVNSGFkbEswT2c9Wh4iHEZycWx2ZjFYUmZwVnBqYm9hU1FJdmVkaUwxYz1lAAAAAMI+AmAAMAA4AA==",
+   "version": 1
+}
