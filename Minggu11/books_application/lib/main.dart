@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Future Demo',
+      title: 'Future Demo - Rochmen',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -54,4 +54,11 @@ class _FuturePageState extends State<FuturePage> {
       ),
     );
   }
+}
+
+Future<Response> getData() async {
+  const authority = 'www.googleapis.com';
+  const path = '/books/v1/volumes/uSfmDAAAQBAJ'; // Ganti ID buku di sini
+  Uri url = Uri.https(authority, path);
+  return http.get(url);
 }
