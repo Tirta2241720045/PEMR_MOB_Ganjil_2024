@@ -16,6 +16,12 @@ A new Flutter project.
 - Kemudian cobalah akses di browser URI tersebut dengan lengkap seperti ini. Jika menampilkan data JSON, maka Anda telah berhasil. Lakukan capture milik Anda dan tulis di README pada laporan praktikum. Lalu lakukan commit dengan pesan "W11: Soal 2".
 ![Screenshot books](images/T102.png)
 
+- Soal 3
+- Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!
+- Jawab: Kode `substring(0, 450)` digunakan untuk membatasi panjang teks hasil respons API agar hanya menampilkan 450 karakter pertama, menjaga tampilan UI tetap rapi dan tidak kelebihan informasi. Sementara itu, `catchError` digunakan untuk menangani kesalahan yang mungkin terjadi saat mengambil data (seperti masalah koneksi atau server tidak responsif), sehingga aplikasi tidak crash dan dapat menampilkan pesan error yang informatif kepada pengguna. Kedua fitur ini memastikan aplikasi tetap stabil dan user-friendly meskipun menghadapi error atau data besar.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 3".
+![Screenshot books](images/T104.png)
+
 
 
 

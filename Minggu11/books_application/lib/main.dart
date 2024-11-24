@@ -32,6 +32,8 @@ class FuturePage extends StatefulWidget {
 
 class _FuturePageState extends State<FuturePage> {
   String result = '';
+  bool isLoading = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,18 +41,32 @@ class _FuturePageState extends State<FuturePage> {
         title: const Text('Back from the Future'),
       ),
       body: Center(
-        child: Column(children: [
-          const Spacer(),
-          ElevatedButton(
-            child: const Text('GO!'),
-            onPressed: () {},
-          ),
-          const Spacer(),
-          Text(result),
-          const Spacer(),
-          const CircularProgressIndicator(),
-          const Spacer(),
-        ]),
+        child: Column(
+          children: [
+            const Spacer(),
+            ElevatedButton(
+              child: const Text('GO!'),
+              onPressed: () {
+                setState(() {});
+                getData().then((value) {
+                  result = value.body.toString().substring(0, 450);
+                  setState(() {});
+                }).catchError((error) {
+                  result = 'An error occurred';
+                  isLoading = false; // Loading selesai meski error
+                });
+              },
+            ),
+            const Spacer(),
+            Text(
+              result,
+              textAlign: TextAlign.center,
+            ),
+            const Spacer(),
+            if (isLoading) const CircularProgressIndicator(),
+            const Spacer(),
+          ],
+        ),
       ),
     );
   }
