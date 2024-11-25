@@ -61,6 +61,11 @@ Metode `count` digunakan untuk menjumlahkan hasil dari ketiga fungsi asynchronou
 ![Screenshot books](images/T110.png)
 ![Screenshot books](images/T111.png)
 
+- Soal 10
+- Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+- Jawab: Hasil akhir untuk kedua pendekatan adalah sama: menampilkan pesan error di layar dan mencetak "Complete" di konsol setelah proses selesai.
+- Perbedaan:
+![Screenshot books](images/T112.png)
 
 
 

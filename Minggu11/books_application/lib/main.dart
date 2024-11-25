@@ -82,19 +82,10 @@ class _FuturePageState extends State<FuturePage> {
                   isLoading = true; // Menampilkan loading
                 });
 
-                returnError().then((value) {
-                  setState(() {
-                    result = 'Success';
-                  });
-                }).catchError((onError) {
-                  setState(() {
-                    result = onError.toString();
-                  });
-                }).whenComplete(() {
+                handleError().whenComplete(() {
                   setState(() {
                     isLoading = false; // Menyembunyikan loading
                   });
-                  print('Complete');
                 });
               },
             ),
@@ -153,5 +144,17 @@ class _FuturePageState extends State<FuturePage> {
   Future returnError() async {
     await Future.delayed(const Duration(seconds: 2));
     throw Exception('Something terrible happened');
+  }
+
+  Future handleError() async {
+    try {
+      await returnError();
+    } catch (error) {
+      setState(() {
+        result = error.toString();
+      });
+    } finally {
+      print('Complete');
+    }
   }
 }
