@@ -9,12 +9,14 @@ class LocationScreen extends StatefulWidget {
 }
 
 class _LocationScreenState extends State<LocationScreen> {
+  Future<Position>? position;
   String myPosition = '';
   bool isLoading = true; // Variabel untuk menampilkan indikator loading
 
   @override
   void initState() {
     super.initState();
+    position = getPosition();
     getPosition().then((Position myPos) async {
       await Future.delayed(const Duration(seconds: 3)); // Simulasi delay
       myPosition =
@@ -29,23 +31,27 @@ class _LocationScreenState extends State<LocationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Current Location - Rochmen'),
-      ),
+      appBar: AppBar(title: Text('Current Location')),
       body: Center(
-        child: isLoading
-            ? const CircularProgressIndicator() // Menampilkan loading
-            : Text(myPosition), // Menampilkan posisi setelah data diterima
-      ),
+          child: FutureBuilder(
+        future: position,
+        builder: (BuildContext context, AsyncSnapshot<Position> snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const CircularProgressIndicator();
+          } else if (snapshot.connectionState == ConnectionState.done) {
+            return Text(snapshot.data.toString());
+          } else {
+            return const Text('');
+          }
+        },
+      )),
     );
   }
 
   Future<Position> getPosition() async {
-    await Geolocator.requestPermission(); // Meminta izin lokasi
-    await Geolocator
-        .isLocationServiceEnabled(); // Mengecek apakah layanan lokasi aktif
-    Position? position =
-        await Geolocator.getCurrentPosition(); // Mendapatkan posisi saat ini
+    await Geolocator.isLocationServiceEnabled();
+    await Future.delayed(const Duration(seconds: 3));
+    Position position = await Geolocator.getCurrentPosition();
     return position;
   }
 }

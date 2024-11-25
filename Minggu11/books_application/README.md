@@ -79,6 +79,13 @@ Metode `count` digunakan untuk menjumlahkan hasil dari ketiga fungsi asynchronou
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 12".
 ![Screenshot books](images/T114.png)
 
+- Soal 13
+- Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+- Jawab: Perbedaan utama UI dalam kode ini dibandingkan versi sebelumnya adalah penambahan indikator loading (`CircularProgressIndicator`) yang muncul saat aplikasi menunggu data lokasi, memberikan informasi visual kepada pengguna bahwa proses pemuatan sedang berlangsung. Selain itu, hasil data lokasi ditampilkan dengan format teks yang lebih deskriptif, seperti "Latitude" dan "Longitude," sehingga lebih mudah dibaca. Penambahan penundaan simulasi (`Future.delayed`) juga membuat tampilan data muncul dengan jeda, menciptakan pengalaman yang lebih terstruktur dalam menampilkan hasil kepada pengguna.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 13".
+![Screenshot books](images/T116.png)
+- Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
+
 
 
 
