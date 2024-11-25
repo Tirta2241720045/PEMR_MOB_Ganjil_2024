@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:books_application/geolocation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const FuturePage(),
+      home: const LocationScreen(), // Ganti home menjadi LocationScreen
     );
   }
 }
@@ -111,10 +112,6 @@ class _FuturePageState extends State<FuturePage> {
     return completer.future;
   }
 
-  // Future calculate() async {
-  //   await Future.delayed(const Duration(seconds: 5));
-  //   completer.complete(42);
-  // }
   calculate() async {
     try {
       await new Future.delayed(const Duration(seconds: 5));

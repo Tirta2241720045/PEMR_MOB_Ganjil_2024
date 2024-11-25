@@ -67,6 +67,17 @@ Metode `count` digunakan untuk menjumlahkan hasil dari ketiga fungsi asynchronou
 - Perbedaan:
 ![Screenshot books](images/T112.png)
 
+- Soal 11
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+![Screenshot books](images/T113.png)
+
+- Soal 12
+- Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
+![Screenshot books](images/T115.png)
+- Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+- Jawab: Saat menjalankan aplikasi, saya mendapatkan koordinat GPS latitude -7.94 dan longitude 112.61, tetapi koordinat tersebut lebih mungkin diperoleh dari perkiraan lokasi berbasis jaringan (seperti Wi-Fi atau IP) daripada GPS fisik perangkat. Di browser, akses ke data geolokasi biasanya menggunakan API `navigator.geolocation`, yang memberikan lokasi berdasarkan sinyal jaringan, dan tidak selalu seakurat GPS.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 12".
+![Screenshot books](images/T114.png)
 
 
 
