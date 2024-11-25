@@ -86,7 +86,11 @@ Metode `count` digunakan untuk menjumlahkan hasil dari ketiga fungsi asynchronou
 ![Screenshot books](images/T116.png)
 - Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
 
-
+- Soal 14
+- Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+- Jawab: Ya, ada perbedaan UI dengan langkah sebelumnya. Setelah menambahkan error handling, jika terjadi error saat mengambil lokasi, aplikasi sekarang akan menampilkan pesan teks "Something terrible happened!" kepada pengguna, yang memberi tahu bahwa ada masalah. Sebelumnya, jika terjadi error, UI hanya akan menampilkan teks kosong atau tidak memberikan indikasi jelas tentang kesalahan. Dengan penanganan error ini, pengalaman pengguna menjadi lebih informatif, karena mereka dapat mengetahui jika ada kendala dalam proses pengambilan lokasi.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 14".
+![Screenshot books](images/T116.png)
 
 
 
