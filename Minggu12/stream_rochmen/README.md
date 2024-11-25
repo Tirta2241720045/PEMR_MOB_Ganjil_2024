@@ -13,6 +13,11 @@ A new Flutter project.
 ![Screenshot stream](images/T102.png)
 - Lakukan commit hasil jawaban Soal 1 dengan pesan "W12: Jawaban Soal 1"
 
+- Soal 2
+- Tambahkan 5 warna lainnya sesuai keinginan Anda pada variabel colors tersebut.
+![Screenshot stream](images/T103.png)
+- Lakukan commit hasil jawaban Soal 2 dengan pesan "W12: Jawaban Soal 2"
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
