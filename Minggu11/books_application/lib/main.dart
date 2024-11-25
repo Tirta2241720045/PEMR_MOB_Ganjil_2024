@@ -79,14 +79,9 @@ class _FuturePageState extends State<FuturePage> {
                 getNumber().then((value) {
                   setState(() {
                     result = value.toString();
-                    isLoading = false; // Sembunyikan loading
                   });
-                }).catchError((error) {
-                  setState(() {
-                    result = 'An error occurred';
-                    isLoading =
-                        false; // Tetap sembunyikan loading jika terjadi error
-                  });
+                }).catchError((e) {
+                  result = 'An error occurred';
                 });
               },
             ),
@@ -112,8 +107,16 @@ class _FuturePageState extends State<FuturePage> {
     return completer.future;
   }
 
-  Future calculate() async {
-    await Future.delayed(const Duration(seconds: 5));
-    completer.complete(42);
+  // Future calculate() async {
+  //   await Future.delayed(const Duration(seconds: 5));
+  //   completer.complete(42);
+  // }
+  calculate() async {
+    try {
+      await new Future.delayed(const Duration(seconds: 5));
+      completer.complete(42);
+    } catch (_) {
+      completer.completeError({'error': 'An error occurred'});
+    }
   }
 }

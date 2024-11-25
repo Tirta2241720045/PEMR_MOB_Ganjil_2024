@@ -24,18 +24,27 @@ A new Flutter project.
 
 - Soal 4
 - Jelaskan maksud kode langkah 1 dan 2 tersebut!
-- Jawab: **Langkah 1: Menambahkan Metode Asynchronous**
+- Jawab: **Langkah 1**
 Tiga metode (`returnOneAsync`, `returnTwoAsync`, `returnThreeAsync`) adalah fungsi asynchronous yang mensimulasikan tugas latar belakang seperti mengambil data dari server. Setiap metode menunggu 3 detik menggunakan `Future.delayed` lalu mengembalikan nilai integer tertentu (masing-masing 1, 2, dan 3). Fungsi ini penting untuk mempelajari cara menangani operasi asynchronous dalam Flutter tanpa memblokir UI.
-- **Langkah 2: Menambahkan Metode `count`**
+- **Langkah 2**
 Metode `count` digunakan untuk menjumlahkan hasil dari ketiga fungsi asynchronous tadi. Dengan `await`, aplikasi menunggu setiap fungsi selesai secara berurutan sebelum menambahkan nilainya ke variabel `total`. Setelah semua selesai, nilai `total` diubah menjadi string dan diperbarui ke UI menggunakan `setState()`. Tujuannya adalah untuk mempraktikkan pengelolaan hasil dari beberapa operasi asynchronous.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 4".
 ![Screenshot books](images/T105.png)
 
-- Soal 4
+- Soal 5
 - Jelaskan maksud kode langkah 2 tersebut!
 - Jawab: Kode ini menggunakan `Completer` untuk mengelola proses asynchronous secara manual. Objek `Completer` diinisialisasi dalam metode `getNumber` dan menghasilkan sebuah `Future` yang akan diselesaikan secara eksplisit. Metode `calculate` mensimulasikan proses asynchronous dengan menunda eksekusi selama 5 detik menggunakan `Future.delayed`, lalu menyelesaikan `Future` tersebut dengan nilai `42` melalui `completer.complete(42)`. Pendekatan ini memungkinkan kontrol penuh atas kapan dan bagaimana sebuah operasi asynchronous diselesaikan, menjadikannya berguna untuk skenario yang bergantung pada kondisi atau proses tertentu.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 5".
 ![Screenshot books](images/T106.png)
+
+- Soal 6
+- Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+- Jawab: **Langkah 5**
+- Pada langkah ini, fungsi `calculate` digunakan untuk mengelola penyelesaian `Future` secara manual dengan `Completer`. Proses ini melibatkan penundaan selama 5 detik menggunakan `Future.delayed`, kemudian menyelesaikan `Future` dengan nilai `42` melalui `completer.complete(42)`. Jika terjadi kesalahan selama proses, blok `try-catch` akan menangkap error, dan `completer.completeError` digunakan untuk menyelesaikan `Future` dengan pesan error. Dengan pendekatan ini, fungsi `calculate` memberikan kontrol eksplisit atas hasil dan error yang terjadi selama eksekusi asynchronous.
+- **Langkah 6:**  
+- Langkah ini menangani hasil `Future` yang dibuat oleh `Completer` menggunakan mekanisme callback `then` dan `catchError`. Callback `then` dijalankan ketika `Future` berhasil diselesaikan, mengambil nilai hasil (misalnya, `42`) dan memperbarui UI dengan nilai tersebut. Sebaliknya, jika `Future` selesai dengan error (misalnya dari `completer.completeError`), callback `catchError` akan menangani kesalahan tersebut dan memperbarui UI dengan pesan error. Langkah ini berfungsi untuk memastikan hasil atau error dari `Future` diproses dan ditampilkan dengan benar kepada pengguna.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 6".
+![Screenshot books](images/T107.png)
 
 
 
