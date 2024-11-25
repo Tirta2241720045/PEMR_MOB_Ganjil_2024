@@ -92,6 +92,30 @@ Metode `count` digunakan untuk menjumlahkan hasil dari ketiga fungsi asynchronou
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 14".
 ![Screenshot books](images/T116.png)
 
+- Soal 15
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+![Screenshot books](images/T119.png)
+- Silakan ganti dengan warna tema favorit Anda.
+![Screenshot books](images/T120.png)
+
+- Soal 16
+- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+- Jawab: Ketika saya mengklik setiap tombol di layar `NavigationSecond`, warna latar belakang layar utama di `NavigationFirst` akan berubah sesuai dengan warna yang dipilih (pink, kuning, atau ungu), sedangkan `AppBar` tetap berwarna ungu sesuai dengan pengaturan `appBarColor`. Ini terjadi karena saat tombol ditekan, warna yang dipilih dikembalikan melalui `Navigator.pop(context, selectedColor)` ke layar sebelumnya, di mana warna tersebut disimpan dalam variabel `bodyColor` dan diterapkan ke latar belakang `body` menggunakan properti `color` di `Container`. `setState()` dipanggil untuk memperbarui UI, sehingga warna latar belakang layar utama (body) berubah, sementara `AppBar` tetap dengan warna biru karena warna `AppBar` tidak dipengaruhi oleh perubahan ini.
+- Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+![Screenshot books](images/T117.png)
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 16".
+![Screenshot books](images/T118.png)
+![Screenshot books](images/T121.png)
+
+- Soal 17
+- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+- Jawab: Saat saya mengklik salah satu tombol (pink, kuning, atau ungu) di dialog, warna latar belakang layar akan berubah sesuai dengan warna yang dipilih (pink, kuning, atau ungu) karena `Navigator.pop(context, selectedColor)` digunakan untuk menutup dialog dan mengembalikan warna yang dipilih. Setelah dialog ditutup, metode `setState()` dipanggil untuk memperbarui status `color`, yang memicu pembaruan UI dengan warna latar belakang yang baru. Dialog tetap terbuka sampai warna dipilih karena properti `barrierDismissible` diatur ke `false`, yang mencegah dialog ditutup dengan mengetuk di luar atau menekan tombol kembali.
+- Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
+![Screenshot books](images/T117.png)
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 16".
+![Screenshot books](images/T122.png)
+
+
 
 
 
