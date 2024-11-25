@@ -74,7 +74,8 @@ class _FuturePageState extends State<FuturePage> {
               child: const Text('GO!'),
               onPressed: () {
                 setState(() {
-                  isLoading = true; // Menampilkan loading
+                  returnFG();
+                  // isLoading = true; // Menampilkan loading
                 });
                 getNumber().then((value) {
                   setState(() {
@@ -118,5 +119,22 @@ class _FuturePageState extends State<FuturePage> {
     } catch (_) {
       completer.completeError({'error': 'An error occurred'});
     }
+  }
+
+  void returnFG() {
+    Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]).then((List<int> values) {
+      int total = values.reduce((a, b) => a + b);
+      setState(() {
+        result = total.toString();
+      });
+    }).catchError((e) {
+      setState(() {
+        result = 'An error occurred';
+      });
+    });
   }
 }
