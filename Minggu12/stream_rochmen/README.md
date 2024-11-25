@@ -31,6 +31,11 @@ A new Flutter project.
 ![Screenshot stream](images/T105.png)
 - Lakukan commit hasil jawaban Soal 4 dengan pesan "W12: Jawaban Soal 4"
 
+- Soal 5
+- Jelaskan perbedaan menggunakan listen dan await for (langkah 9) !
+- Jawab: Perbedaan utama antara `await for` dan `listen` adalah pada cara mereka menangani elemen dalam stream secara asynchronous. `await for` digunakan dalam fungsi `async` untuk menunggu setiap elemen dari stream satu per satu, cocok untuk stream yang mungkin berakhir secara otomatis karena loop akan berhenti saat stream selesai. Di sisi lain, `listen` tidak memerlukan `await` dan biasanya digunakan untuk mendengarkan stream yang terus berjalan tanpa batas waktu. `listen` juga menawarkan fleksibilitas tambahan, seperti opsi `onDone` untuk menangani saat stream selesai dan `onError` untuk menangani kesalahan.
+- Lakukan commit hasil jawaban Soal 5 dengan pesan "W12: Jawaban Soal 5"
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
