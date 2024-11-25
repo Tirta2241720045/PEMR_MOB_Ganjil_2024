@@ -18,6 +18,13 @@ A new Flutter project.
 ![Screenshot stream](images/T103.png)
 - Lakukan commit hasil jawaban Soal 2 dengan pesan "W12: Jawaban Soal 2"
 
+- Soal 3
+- Jelaskan fungsi keyword yield* pada kode tersebut!
+- Jawab: `yield*` pada kode tersebut digunakan untuk mengirimkan seluruh elemen dari stream lain ke dalam stream utama secara langsung. Dengan menggunakan `yield*`, elemen yang dihasilkan dari `Stream.periodic(...)` akan diteruskan ke stream utama `getColors()` tanpa perlu mengambil setiap elemen secara manual, sehingga seluruh hasil dari stream periodik ini dapat dikirimkan ke stream utama secara efisien.
+- Apa maksud isi perintah kode tersebut?
+- Jawab: Kode `Stream.periodic(const Duration(seconds: 1), (int t) {...})` menghasilkan sebuah stream yang mengirimkan data setiap detik. Fungsi `(int t) { int index = t % colors.length; return colors[index]; }` digunakan untuk mengambil warna dari daftar `colors` secara berurutan dengan memodulasi indeks terhadap panjang daftar, memastikan bahwa warna akan diulang ketika mencapai akhir daftar. Hasilnya, setiap detik `getColors()` akan mengirimkan warna baru, secara terus-menerus mengulang daftar warna.
+- Lakukan commit hasil jawaban Soal 3 dengan pesan "W12: Jawaban Soal 3"
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
