@@ -2,6 +2,17 @@
 
 A new Flutter project.
 
+# Nama: Tirta Nurrochman Bintang Prawira
+# NIM: 2241720045
+# Kelas/Absen: TI-3A/27
+
+- Soal 1
+- Tambahkan nama panggilan Anda pada title app sebagai identitas hasil pekerjaan Anda.
+![Screenshot stream](images/T101.png)
+- Gantilah warna tema aplikasi sesuai kesukaan Anda.
+![Screenshot stream](images/T102.png)
+- Lakukan commit hasil jawaban Soal 1 dengan pesan "W12: Jawaban Soal 1"
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
