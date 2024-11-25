@@ -64,7 +64,12 @@ class _FuturePageState extends State<FuturePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Back from the Future'),
+        title: const Text(
+          'Back from the Future',
+          style: TextStyle(
+              color: Colors.white), // Mengatur warna teks menjadi putih
+        ),
+        backgroundColor: Colors.purple,
       ),
       body: Center(
         child: Column(
@@ -74,15 +79,22 @@ class _FuturePageState extends State<FuturePage> {
               child: const Text('GO!'),
               onPressed: () {
                 setState(() {
-                  returnFG();
-                  // isLoading = true; // Menampilkan loading
+                  isLoading = true; // Menampilkan loading
                 });
-                getNumber().then((value) {
+
+                returnError().then((value) {
                   setState(() {
-                    result = value.toString();
+                    result = 'Success';
                   });
-                }).catchError((e) {
-                  result = 'An error occurred';
+                }).catchError((onError) {
+                  setState(() {
+                    result = onError.toString();
+                  });
+                }).whenComplete(() {
+                  setState(() {
+                    isLoading = false; // Menyembunyikan loading
+                  });
+                  print('Complete');
                 });
               },
             ),
@@ -136,5 +148,10 @@ class _FuturePageState extends State<FuturePage> {
         result = 'An error occurred';
       });
     });
+  }
+
+  Future returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw Exception('Something terrible happened');
   }
 }

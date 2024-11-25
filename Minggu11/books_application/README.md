@@ -56,6 +56,11 @@ Metode `count` digunakan untuk menjumlahkan hasil dari ketiga fungsi asynchronou
 - Jawab: **Langkah 1** menggunakan **`FutureGroup`**, sebuah library dari package **`async`**, untuk mengelola sekumpulan Future yang berjalan paralel. Setiap Future ditambahkan secara eksplisit menggunakan metode **`add`**, kemudian kelompok Future ditutup menggunakan **`close`** untuk menandakan bahwa tidak ada Future tambahan yang akan ditambahkan. Setelah semua Future selesai, hasilnya diakses sebagai daftar yang diproses menggunakan perulangan manual untuk menjumlahkan nilai-nilai.
 - **Langkah 4** memanfaatkan **`Future.wait`**, fitur bawaan Dart, untuk menjalankan dan menunggu sekumpulan Future secara paralel. Future diatur dalam sebuah daftar, dan hasilnya langsung tersedia sebagai daftar setelah semua selesai. Proses penjumlahan nilai dilakukan dengan lebih ringkas menggunakan metode **`reduce`**. Selain itu, error handling ditambahkan menggunakan **`catchError`** untuk menangkap kesalahan dari salah satu Future dalam grup. Pendekatan ini lebih sederhana dan efisien karena tidak memerlukan dependensi eksternal.
 
+- Soal 9
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 9".
+![Screenshot books](images/T110.png)
+![Screenshot books](images/T111.png)
+
 
 
 
