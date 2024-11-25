@@ -22,6 +22,15 @@ A new Flutter project.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 3".
 ![Screenshot books](images/T104.png)
 
+- Soal 4
+- Jelaskan maksud kode langkah 1 dan 2 tersebut!
+- Jawab: **Langkah 1: Menambahkan Metode Asynchronous**
+Tiga metode (`returnOneAsync`, `returnTwoAsync`, `returnThreeAsync`) adalah fungsi asynchronous yang mensimulasikan tugas latar belakang seperti mengambil data dari server. Setiap metode menunggu 3 detik menggunakan `Future.delayed` lalu mengembalikan nilai integer tertentu (masing-masing 1, 2, dan 3). Fungsi ini penting untuk mempelajari cara menangani operasi asynchronous dalam Flutter tanpa memblokir UI.
+- **Langkah 2: Menambahkan Metode `count`**
+Metode `count` digunakan untuk menjumlahkan hasil dari ketiga fungsi asynchronous tadi. Dengan `await`, aplikasi menunggu setiap fungsi selesai secara berurutan sebelum menambahkan nilainya ke variabel `total`. Setelah semua selesai, nilai `total` diubah menjadi string dan diperbarui ke UI menggunakan `setState()`. Tujuannya adalah untuk mempraktikkan pengelolaan hasil dari beberapa operasi asynchronous.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 4".
+![Screenshot books](images/T105.png)
+
 
 
 
