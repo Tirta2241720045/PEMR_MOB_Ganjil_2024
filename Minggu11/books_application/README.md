@@ -31,7 +31,11 @@ Metode `count` digunakan untuk menjumlahkan hasil dari ketiga fungsi asynchronou
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 4".
 ![Screenshot books](images/T105.png)
 
-
+- Soal 4
+- Jelaskan maksud kode langkah 2 tersebut!
+- Jawab: Kode ini menggunakan `Completer` untuk mengelola proses asynchronous secara manual. Objek `Completer` diinisialisasi dalam metode `getNumber` dan menghasilkan sebuah `Future` yang akan diselesaikan secara eksplisit. Metode `calculate` mensimulasikan proses asynchronous dengan menunda eksekusi selama 5 detik menggunakan `Future.delayed`, lalu menyelesaikan `Future` tersebut dengan nilai `42` melalui `completer.complete(42)`. Pendekatan ini memungkinkan kontrol penuh atas kapan dan bagaimana sebuah operasi asynchronous diselesaikan, menjadikannya berguna untuk skenario yang bergantung pada kondisi atau proses tertentu.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 5".
+![Screenshot books](images/T106.png)
 
 
 
