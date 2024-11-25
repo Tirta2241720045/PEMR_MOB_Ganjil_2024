@@ -25,6 +25,12 @@ A new Flutter project.
 - Jawab: Kode `Stream.periodic(const Duration(seconds: 1), (int t) {...})` menghasilkan sebuah stream yang mengirimkan data setiap detik. Fungsi `(int t) { int index = t % colors.length; return colors[index]; }` digunakan untuk mengambil warna dari daftar `colors` secara berurutan dengan memodulasi indeks terhadap panjang daftar, memastikan bahwa warna akan diulang ketika mencapai akhir daftar. Hasilnya, setiap detik `getColors()` akan mengirimkan warna baru, secara terus-menerus mengulang daftar warna.
 - Lakukan commit hasil jawaban Soal 3 dengan pesan "W12: Jawaban Soal 3"
 
+- Soal 4
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![Screenshot stream](images/T104.png)
+![Screenshot stream](images/T105.png)
+- Lakukan commit hasil jawaban Soal 4 dengan pesan "W12: Jawaban Soal 4"
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
