@@ -52,8 +52,8 @@ A new Flutter project.
 
 - ### Langkah 15: Fungsi `addRandomNumber()` sebelumnya bertugas menghasilkan angka acak dan menambahkannya ke dalam stream menggunakan `addNumberToSink()`. Namun, pada langkah ini, alih-alih menambahkan angka, fungsi tersebut langsung memanggil metode `addError()` untuk memicu error di stream. Ini digunakan untuk menguji atau mensimulasikan bagaimana aplikasi menangani error yang dikirimkan oleh stream.
 - Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
-![Screenshot stream](images/T107.png)
-![Screenshot stream](images/T108.png)
+- ![Screenshot stream](images/T107.png)
+- ![Screenshot stream](images/T108.png)
 - Lalu lakukan commit dengan pesan "W12: Jawaban Soal 7".
 
 ## Getting Started
