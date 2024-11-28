@@ -29,65 +29,68 @@ class StreamHomePage extends StatefulWidget {
 }
 
 class _StreamHomePageState extends State<StreamHomePage> {
-  Color bgColor = Colors.white; // Warna default putih
   late NumberStream numberStream;
   late StreamController<int> numberStreamController;
   int lastNumber = 0;
-  late StreamTransformer<int, int> transformer;
+  StreamSubscription? subscription;
+  StreamSubscription? transformedSubscription;
 
   @override
   void initState() {
     super.initState();
-
-    // Inisialisasi NumberStream dan StreamTransformer
     numberStream = NumberStream();
-    numberStreamController = numberStream.controller;
 
-    transformer = StreamTransformer<int, int>.fromHandlers(
+    // Ubah controller menjadi broadcast
+    numberStreamController = StreamController<int>.broadcast();
+
+    // Stream yang sudah broadcast
+    Stream<int> broadcastStream = numberStreamController.stream;
+
+    // Transformer untuk mengalikan nilai
+    StreamTransformer<int, int> transformer =
+        StreamTransformer<int, int>.fromHandlers(
       handleData: (value, sink) {
-        sink.add(value * 10); // Kalikan angka dengan 10
+        sink.add(value * 10);
       },
       handleError: (error, trace, sink) {
-        sink.add(-1); // Tangani error dengan mengirimkan -1
+        sink.add(-1);
       },
       handleDone: (sink) => sink.close(),
     );
 
-    numberStreamController.stream.transform(transformer).listen((event) {
+    // Listener pertama untuk stream asli
+    subscription = broadcastStream.listen((event) {
       setState(() {
-        lastNumber = event; // Perbarui angka terakhir
+        lastNumber = event;
       });
-    }).onError((error) {
+    }, onError: (error) {
       setState(() {
-        lastNumber = -1; // Jika ada error, tampilkan -1
+        lastNumber = -1;
       });
+    }, onDone: () {
+      print('onDone was called');
     });
 
-    // Inisialisasi ColorStream (dikomentari)
-    // colorStream = ColorStream();
-    // changeColor();
-  }
-
-  /*
-  void changeColor() {
-    colorStream.getColors().listen((eventColor) {
+    // Listener kedua untuk stream yang ditransformasi
+    transformedSubscription =
+        broadcastStream.transform(transformer).listen((event) {
       setState(() {
-        bgColor = eventColor; // Perbarui warna latar
+        lastNumber = event;
       });
+    }, onError: (error) {
+      setState(() {
+        lastNumber = -1;
+      });
+    }, onDone: () {
+      print('Transformed stream onDone was called');
     });
-  }
-  */
-
-  void addRandomNumber() {
-    Random random = Random();
-    int myNum = random.nextInt(10); // Angka acak dari 0-9
-    numberStream.addNumberToSink(myNum);
-    // numberStream.addError(); // Uncomment untuk mengetes error
   }
 
   @override
   void dispose() {
-    numberStreamController.close(); // Tutup controller saat widget dihapus
+    subscription?.cancel();
+    transformedSubscription?.cancel();
+    numberStreamController.close();
     super.dispose();
   }
 
@@ -103,7 +106,7 @@ class _StreamHomePageState extends State<StreamHomePage> {
       ),
       body: Container(
         width: double.infinity,
-        color: bgColor, // Latar belakang putih
+        color: Colors.white, // Default white background
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -116,32 +119,45 @@ class _StreamHomePageState extends State<StreamHomePage> {
               onPressed: () => addRandomNumber(),
               child: const Text('New Random Number'),
             ),
+            ElevatedButton(
+              onPressed: () => stopStream(),
+              child: const Text('Stop Subscription'),
+            ),
           ],
         ),
       ),
     );
   }
-}
 
-// Stream untuk menghasilkan warna secara acak
-class ColorStream {
-  final StreamController<Color> _colorController = StreamController<Color>();
-
-  Stream<Color> getColors() async* {
-    while (true) {
-      await Future.delayed(const Duration(seconds: 1));
-      yield Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0);
+  void addRandomNumber() {
+    Random random = Random();
+    int myNum = random.nextInt(10);
+    if (!numberStreamController.isClosed) {
+      numberStreamController.sink.add(myNum);
+    } else {
+      setState(() {
+        lastNumber = -1;
+      });
     }
   }
 
-  void dispose() {
-    _colorController.close();
+  void stopStream() {
+    // Cancel the existing subscriptions
+    subscription?.cancel();
+    transformedSubscription?.cancel();
+
+    // Close the StreamController to trigger onDone
+    numberStreamController.close();
+
+    // This triggers the onDone callback in the listeners
+    setState(() {
+      lastNumber = -1;
+    });
   }
 }
 
-// Stream untuk menghasilkan angka
 class NumberStream {
-  final StreamController<int> controller = StreamController<int>();
+  final StreamController<int> controller = StreamController<int>.broadcast();
 
   void addNumberToSink(int number) {
     controller.sink.add(number);
