@@ -46,11 +46,11 @@ A new Flutter project.
 
 ### Soal 7
 - Jelaskan maksud kode langkah 13 sampai 15 tersebut!
-- ### Langkah 13: Metode `addError()` digunakan untuk menambahkan error ke dalam sink dari stream. Dengan memanggil `controller.sink.addError('error')`, stream akan mengirimkan sebuah error (dalam hal ini berupa string `'error'`) kepada pendengar stream. Hal ini berguna untuk mengelola skenario error dalam aplikasi berbasis stream.
+- Jawab: Langkah 13: Metode `addError()` digunakan untuk menambahkan error ke dalam sink dari stream. Dengan memanggil `controller.sink.addError('error')`, stream akan mengirimkan sebuah error (dalam hal ini berupa string `'error'`) kepada pendengar stream. Hal ini berguna untuk mengelola skenario error dalam aplikasi berbasis stream.
 
-- ### Langkah 14: Di langkah ini, fungsi `stream.listen()` digunakan untuk mendengarkan data atau error yang dikirim oleh stream. Jika ada data baru (`event`), aplikasi akan memperbarui state dengan nilai tersebut melalui `setState()`. Namun, jika stream mengirimkan error, callback `onError()` akan dipicu, dan aplikasi akan memperbarui state dengan nilai `-1` sebagai penanda bahwa error terjadi.
+- Langkah 14: Di langkah ini, fungsi `stream.listen()` digunakan untuk mendengarkan data atau error yang dikirim oleh stream. Jika ada data baru (`event`), aplikasi akan memperbarui state dengan nilai tersebut melalui `setState()`. Namun, jika stream mengirimkan error, callback `onError()` akan dipicu, dan aplikasi akan memperbarui state dengan nilai `-1` sebagai penanda bahwa error terjadi.
 
-- ### Langkah 15: Fungsi `addRandomNumber()` sebelumnya bertugas menghasilkan angka acak dan menambahkannya ke dalam stream menggunakan `addNumberToSink()`. Namun, pada langkah ini, alih-alih menambahkan angka, fungsi tersebut langsung memanggil metode `addError()` untuk memicu error di stream. Ini digunakan untuk menguji atau mensimulasikan bagaimana aplikasi menangani error yang dikirimkan oleh stream.
+- Langkah 15: Fungsi `addRandomNumber()` sebelumnya bertugas menghasilkan angka acak dan menambahkannya ke dalam stream menggunakan `addNumberToSink()`. Namun, pada langkah ini, alih-alih menambahkan angka, fungsi tersebut langsung memanggil metode `addError()` untuk memicu error di stream. Ini digunakan untuk menguji atau mensimulasikan bagaimana aplikasi menangani error yang dikirimkan oleh stream.
 - Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
 - ![Screenshot stream](images/T107.png)
 - ![Screenshot stream](images/T108.png)
@@ -58,14 +58,14 @@ A new Flutter project.
 
 ### Soal 8
 - Jelaskan maksud kode langkah 1-3 tersebut!
-- Kode pada langkah-langkah tersebut bertujuan untuk memproses data pada stream menggunakan `StreamTransformer` sebelum data diterima oleh listener. Pertama, variabel `transformer` dideklarasikan untuk mendefinisikan cara data diproses, termasuk pengolahan data (dalam hal ini mengalikan nilai dengan 10), menangani kesalahan (mengembalikan nilai `-1` jika terjadi error), dan menutup stream saat selesai. Transformer ini kemudian diterapkan pada stream di dalam metode `initState` menggunakan `.transform(transformer)`. Data yang telah diolah oleh transformer didengarkan melalui `listen`, dan setiap data baru diperbarui ke variabel `lastNumber` menggunakan `setState` untuk mengubah tampilan UI secara langsung. Jika terjadi error, nilai default `-1` ditampilkan.
+- Jawab: Kode pada langkah-langkah tersebut bertujuan untuk memproses data pada stream menggunakan `StreamTransformer` sebelum data diterima oleh listener. Pertama, variabel `transformer` dideklarasikan untuk mendefinisikan cara data diproses, termasuk pengolahan data (dalam hal ini mengalikan nilai dengan 10), menangani kesalahan (mengembalikan nilai `-1` jika terjadi error), dan menutup stream saat selesai. Transformer ini kemudian diterapkan pada stream di dalam metode `initState` menggunakan `.transform(transformer)`. Data yang telah diolah oleh transformer didengarkan melalui `listen`, dan setiap data baru diperbarui ke variabel `lastNumber` menggunakan `setState` untuk mengubah tampilan UI secara langsung. Jika terjadi error, nilai default `-1` ditampilkan.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 - ![Screenshot stream](images/T109.png)
 - Lalu lakukan commit dengan pesan "W12: Jawaban Soal 8".
 
 ### Soal 9
 - Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
-- Ketiga langkah di atas secara bersama-sama mengatur bagaimana aplikasi berinteraksi dengan stream. Langkah 2 mempersiapkan fondasi, langkah 6 membersihkan sumber daya, dan langkah 8 memastikan bahwa operasi pada stream dilakukan dengan aman dan efisien. Tujuan utamanya adalah untuk memastikan bahwa aplikasi dapat dengan baik mengelola data yang mengalir secara asinkron melalui stream.
+- Jawab: Ketiga langkah di atas secara bersama-sama mengatur bagaimana aplikasi berinteraksi dengan stream. Langkah 2 mempersiapkan fondasi, langkah 6 membersihkan sumber daya, dan langkah 8 memastikan bahwa operasi pada stream dilakukan dengan aman dan efisien. Tujuan utamanya adalah untuk memastikan bahwa aplikasi dapat dengan baik mengelola data yang mengalir secara asinkron melalui stream.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 - ![Screenshot stream](images/T110.png)
 - ![Screenshot stream](images/T111.png)
