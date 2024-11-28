@@ -56,6 +56,13 @@ A new Flutter project.
 - ![Screenshot stream](images/T108.png)
 - Lalu lakukan commit dengan pesan "W12: Jawaban Soal 7".
 
+- Soal 8
+- Jelaskan maksud kode langkah 1-3 tersebut!
+- Kode pada langkah-langkah tersebut bertujuan untuk memproses data pada stream menggunakan `StreamTransformer` sebelum data diterima oleh listener. Pertama, variabel `transformer` dideklarasikan untuk mendefinisikan cara data diproses, termasuk pengolahan data (dalam hal ini mengalikan nilai dengan 10), menangani kesalahan (mengembalikan nilai `-1` jika terjadi error), dan menutup stream saat selesai. Transformer ini kemudian diterapkan pada stream di dalam metode `initState` menggunakan `.transform(transformer)`. Data yang telah diolah oleh transformer didengarkan melalui `listen`, dan setiap data baru diperbarui ke variabel `lastNumber` menggunakan `setState` untuk mengubah tampilan UI secara langsung. Jika terjadi error, nilai default `-1` ditampilkan.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+- ![Screenshot stream](images/T109.png)
+- Lalu lakukan commit dengan pesan "W12: Jawaban Soal 8".
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
