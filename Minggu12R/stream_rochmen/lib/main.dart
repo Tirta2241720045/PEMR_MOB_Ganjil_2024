@@ -31,6 +31,8 @@ class StreamHomePage extends StatefulWidget {
 class _StreamHomePageState extends State<StreamHomePage> {
   late NumberStream numberStream;
   late StreamController<int> numberStreamController;
+  late StreamSubscription subscription2; // Ditambahkan
+  String values = ''; // Ditambahkan
   int lastNumber = 0;
   StreamSubscription? subscription;
   StreamSubscription? transformedSubscription;
@@ -84,11 +86,25 @@ class _StreamHomePageState extends State<StreamHomePage> {
     }, onDone: () {
       print('Transformed stream onDone was called');
     });
+
+    // Menambahkan listener dari instruksi
+    subscription = broadcastStream.listen((event) {
+      setState(() {
+        values += '$event - ';
+      });
+    });
+
+    subscription2 = broadcastStream.listen((event) {
+      setState(() {
+        values += '$event - ';
+      });
+    });
   }
 
   @override
   void dispose() {
     subscription?.cancel();
+    subscription2.cancel(); // Pastikan listener kedua juga dibatalkan
     transformedSubscription?.cancel();
     numberStreamController.close();
     super.dispose();
@@ -115,13 +131,17 @@ class _StreamHomePageState extends State<StreamHomePage> {
               lastNumber.toString(),
               style: const TextStyle(fontSize: 48, color: Colors.black),
             ),
+            Text(
+              values,
+              style: const TextStyle(fontSize: 18, color: Colors.blue),
+            ),
             ElevatedButton(
               onPressed: () => addRandomNumber(),
               child: const Text('New Random Number'),
             ),
             ElevatedButton(
               onPressed: () => stopStream(),
-              child: const Text('Stop Subscription'),
+              child: const Text('Stop Stream'),
             ),
           ],
         ),
@@ -144,6 +164,7 @@ class _StreamHomePageState extends State<StreamHomePage> {
   void stopStream() {
     // Cancel the existing subscriptions
     subscription?.cancel();
+    subscription2.cancel(); // Tambahkan ini untuk cancel subscription2
     transformedSubscription?.cancel();
 
     // Close the StreamController to trigger onDone

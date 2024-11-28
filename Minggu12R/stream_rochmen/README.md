@@ -71,6 +71,17 @@ A new Flutter project.
 - ![Screenshot stream](images/T111.png)
 - Lalu lakukan commit dengan pesan "W12: Jawaban Soal 9".
 
+### Soal 10
+- Jelaskan mengapa error itu bisa terjadi ?
+- Jawab: Error terjadi karena Stream default di Flutter hanya bisa didengarkan sekali, sehingga menambahkan lebih dari satu listener menyebabkan konflik. Solusinya adalah mengubah Stream menjadi **broadcast stream** menggunakan `StreamController.broadcast()` atau `stream.asBroadcastStream()` agar bisa memiliki banyak listener secara bersamaan.
+
+### Soal 11
+- Jelaskan mengapa hal itu bisa terjadi ?
+- Jawab: Output menampilkan angka secara berulang, seperti `4 - 4 - 6 - 6`, karena ada dua listener (**subscription** dan **subscription2**) yang mendengarkan stream yang sama. Ketika stream mengirimkan sebuah event (angka), kedua listener menerima event tersebut secara bersamaan. Setiap listener menambahkan angka yang diterima ke variabel `values`. Akibatnya, setiap angka yang dihasilkan oleh stream muncul dua kali dalam output, satu dari setiap listener. 
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+- ![Screenshot stream](images/T112.png)
+- Lalu lakukan commit dengan pesan "W12: Jawaban Soal 10,11".
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
